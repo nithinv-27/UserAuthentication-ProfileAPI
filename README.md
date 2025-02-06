@@ -19,3 +19,56 @@ Run the following command to create a virtual environment:
 
 ```sh
 python -m venv env
+```
+
+### 2. Activate the Virtual Environment
+
+- **Windows**:  
+  ```sh
+  env\Scripts\activate
+  ```
+
+- **Mac/Linux**:  
+  ```sh
+  source env/bin/activate
+  ```
+
+### 3. Install Dependencies
+
+Run the following command to install all required dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+### 4. Generate a Secure Secret Key
+
+Generate a secret key for JWT authentication and add it to `SECRET_KEY` in `routers.py`:
+
+```sh
+openssl rand -hex 32
+```
+
+### 5. Create a Database Collection
+
+Run `database.py` to create the required collection in MongoDB:
+
+```sh
+python database.py
+```
+
+### 6. Run the Application
+
+Start the API by running:
+
+```sh
+python main.py
+```
+
+## API Endpoints
+
+The project includes three main API endpoints:
+
+- **`/register`** – Registers a new user.  
+- **`/login`** – Logs in a user and generates a JWT token.  
+- **`/profile`** – Retrieves the authenticated user's profile (requires authentication).
