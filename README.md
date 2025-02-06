@@ -46,7 +46,7 @@ pip install -r requirements.txt
 Generate a secret key for JWT authentication and add it to `SECRET_KEY` in `routers\routes.py`:
 
 ```sh
-openssl rand -hex 32
+$ openssl rand -hex 32
 ```
 
 ### 5. Create a Database Collection
