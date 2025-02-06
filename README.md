@@ -71,4 +71,4 @@ The project includes three main API endpoints:
 
 - **`/register`** – Registers a new user.  
 - **`/login`** – Logs in a user and generates a JWT token.  
-- **`/profile`** – Retrieves the authenticated user's profile (requires authentication).
+- **`/profile`** – Retrieves the authenticated user's profile upon successful authentication.
