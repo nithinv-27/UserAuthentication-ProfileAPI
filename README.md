@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ### 4. Generate a Secure Secret Key
 
-Generate a secret key for JWT authentication and add it to `SECRET_KEY` in `routers.py`:
+Generate a secret key for JWT authentication and add it to `SECRET_KEY` in `routers\routes.py`:
 
 ```sh
 openssl rand -hex 32
